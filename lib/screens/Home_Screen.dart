@@ -161,7 +161,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   child: Padding(
                                     padding: const EdgeInsets.all(5.0),
                                     child: Container  (
-                                      color:Color(0x76dddddd),
+                                      color:Color(0x76A8A8A8),
                                       child: Text(
                                         newsList[index].title ?? 'Eng M7md Algndy',
                                         style: TextStyle(fontSize: 17,color: Colors.white,),
