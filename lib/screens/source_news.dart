@@ -5,7 +5,7 @@ import 'package:newss/tabs/TabWidget.dart';
 
 class SourceNews extends StatefulWidget {
   const SourceNews({super.key});
-
+  static const String routeName = 'source_news' ;
   @override
   State<SourceNews> createState() => _SourceNewsState();
 }
@@ -18,8 +18,8 @@ class _SourceNewsState extends State<SourceNews> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: Text(
-          'News ...',
-          style: Theme.of(context).textTheme.titleLarge,
+          'News ..',
+          style: Theme.of(context).textTheme.titleLarge?.copyWith(fontSize: 18),
         ),
       ),
       body: FutureBuilder<SourceResponce?>(

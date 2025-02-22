@@ -4,13 +4,15 @@ import 'package:newss/data_model/ApiManegars.dart';
 import 'package:newss/data_model/NewsResponce.dart';
 import 'package:newss/news/All_News/AllNewsItem.dart';
 
+import '../../screens/NewsDetails.dart';
+
 class Allnewswidget extends StatelessWidget {
   const Allnewswidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<NewsResponce?>(
-      future: ApiManagers.getNews('bbc-news'),
+      future: ApiManagers.getNews('abc-news'),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return Center(child: CircularProgressIndicator(color: Colors.cyan));

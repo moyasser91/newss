@@ -18,7 +18,7 @@ class TabItem extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Text(source.name??"News",
-          style: Theme.of(context).textTheme.titleLarge?.copyWith(fontSize: 18,fontWeight: FontWeight.w400),
+          style: Theme.of(context).textTheme.titleLarge?.copyWith(fontSize: 14,fontWeight: FontWeight.w400),
           ),
         ),
       ),
